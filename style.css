@@ -505,7 +505,7 @@ button.sidebarBtn {
         z-index: 99;
     }
 
-    .nav-list {
+    .primary-navigation .nav-list{
         position: fixed;
         top: 0px;
         left: 0%;
@@ -515,6 +515,7 @@ button.sidebarBtn {
         transition: .3s;
         display: none;
         padding-top: 100px;
+        flex-direction: column;
     }
 
     .nav-list.active {
@@ -572,6 +573,11 @@ button.sidebarBtn {
     .nav-list li {
         padding: 20px;
     }
+    
+    .footer-navigation ul.nav-list {
+        display: block;
+        margin: 0px;
+    } 
 
 
 
