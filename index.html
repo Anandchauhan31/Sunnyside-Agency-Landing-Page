@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script>
+        // $(document).ready(function () {
+        //         $('.inactive').click(function() {
+        //             $('.nav-list').hide();
+        //         });
+        //     });
+
+            $(document).ready(function () {
+                $('.sidebarBtn').click(function() {
+                    $('.nav-list').toggleClass('active');
+                    $('.sidebarBtn').toggleClass('toggle');
+
+                    $("ul li a").click(function(){
+                        $(".nav-list").toggleClass('active');
+                        $('.sidebarBtn').toggleClass('toggle');
+                        
+                    })
+                    
+                })   
+                
+            })
+
+        //     $(".btn").on("click", function () {
+        //         $(".btn").toggleClass("close-btn");
+        //         $(".menu").toggleClass("open-menu");
+        //     });
+        // });
+        
+    </script>
+
+    <!-- <script type="text/javascript">
+        $(".sidebarBtn").click(function(){
+          $(this).toggleClass(".sidebarBtn span");
+          $(".nav-list").toggleClass("active");
+        });
+      </script> -->
+
+    <title>Sunnyside agency landing page </title>
+</head>
+
+<body>
+    <header class="hero-image">
+
+        <div class="content-wrapper">
+            <a href="#">
+                <div class="logo"><img src="images/logo.svg" alt="logo"></div>
+            </a>
+            <nav class="primary-navigation">
+                <ul class="nav-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#" >Service</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <button class="btn button2">Contact</button>
+                   
+                    
+                </ul>
+                <button class="sidebarBtn">
+                    <span></span>
+                </button>
+
+            </nav>
+
+
+        </div>
+
+        <div class="hero-text-col">
+            <h1 class="light-headline">We are creatives</h1>
+        </div>
+        <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-down">
+
+        </div>
+    </header>
+
+
+
+
+    <section class="grid-container">
+
+        <div class="col text-col">
+            <h2 class="dark-subtitle">Transform your brand</h2>
+            <p class="dark-body-text">We are a full-service creative agency specializing in helping brands grow fast.
+                Engage your clients through compelling visuals that do most of the marketing for you. </p>
+            <button class="btn button1">Learn more</button>
+        </div>
+        <div class="col image-col"></div>
+
+        <div class="col text-col">
+            <h2 class="dark-subtitle">Stand out to the right audience</h2>
+            <p class="dark-body-text">Using a collaborative formula of designers,
+                researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital
+                places.</p>
+            <button class="btn button1">Learn more</button>
+        </div>
+
+        <div class="col image-col"></div>
+
+
+        <div class="text left-image">
+            <h3 class="dark-small-subtitle">Graphic design</h2>
+                <p class="dark-body-text">Great design makes you memorable. We deliver artwork that underscores your
+                    brand message and captures potential clients’ attention.</p>
+        </div>
+        <div class="text right-image">
+            <h3 class="dark-small-subtitle">Photography</h2>
+                <p class="dark-body-text">Increase your credibility by getting the most stunning, high-quality photos
+                    that improve your business image.</p>
+        </div>
+    </section>
+
+
+    <section class="container">
+        <div class="testimonial-area">
+            <h4 class="dark-spot-text">Client testimonials</h4>
+            <div class="testimonial-section">
+                <div class="testimonial">
+                    <img src="images/image-emily.jpg" alt="image-emily" class="testimonial-image">
+                    <p class="feedback">We put our trust in Sunnyside and they delivered,
+                        making sure our needs were met and deadlines were always hit.
+                    </p>
+                    <h5 class="customer-name">Emily R.</h5>
+                    <h6 class="dark-small-text">Marketing Director<h6>
+                </div>
+                <div class="testimonial">
+                    <img src="images/image-thomas.jpg" alt="image-emily" class="testimonial-image">
+                    <p class="feedback">Sunnyside’s enthusiasm coupled with their keen interest in our
+                        brand’s success made it a satisfying and enjoyable experience.
+                    </p>
+                    <h5 class="customer-name">Thomas S.</h5>
+                    <h6 class="dark-small-text">Chief Operating Officer</h6>
+                </div>
+                <div class="testimonial">
+                    <img src="images/image-jennie.jpg" alt="image-emily" class="testimonial-image">
+                    <p class="feedback">Incredible end result! Our sales increased over 400% when we
+                        worked with Sunnyside. Highly recommended!
+                    </p>
+                    <h5 class="customer-name">Jennie F.</h5>
+                    <h6 class="dark-small-text">Business Owner<h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="gallery-grid">
+        
+        <a target="_blank" href="images/desktop/image-gallery-milkbottles.jpg">
+            <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" class="gallery-image">
+        </a>
+        <a target="_blank" href="images/desktop/image-gallery-orange.jpg">
+            <img src="images/desktop/image-gallery-orange.jpg" alt="" class="gallery-image">
+        </a>
+        <a target="_blank" href="images/desktop/image-gallery-cone.jpg">
+            <img src="images/desktop/image-gallery-cone.jpg" alt="" class="gallery-image">
+        </a>
+        <a target="_blank" href="images/desktop/image-gallery-sugarcubes.jpg">
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" class="gallery-image">
+        </a>
+    </section>
+    
+
+    <footer class="footer-area">
+        <a href="#"> <img src="images/logo.svg" alt="sunnyside-logo"></a>
+        <nav class="footer-navigation">
+            <ul class="nav-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Projects</a></li>
+            </ul>
+        </nav>
+        <div class="social-links">
+            <ul>
+                <li> <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fa fa-facebook-official"></i>
+                    </a>
+                </li>
+                <li> <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li> <a href="https://www.twitter.com/" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li> <a href="https://www.pinterest.com/" target="_blank">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
