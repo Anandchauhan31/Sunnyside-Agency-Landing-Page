@@ -321,6 +321,12 @@ button.sidebarBtn {
     position: relative;
 }
 
+/* For Large Desktop */
+@media (min-width: 1200px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(900px, 1fr));
+    }
+}
 
 /* Tab responsive */
 
